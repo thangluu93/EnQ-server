@@ -395,6 +395,7 @@ export const getTestExamByTypeAndRank = async (req, res) => {
 };
 
 export const getHistory = async (req, res) => {
+    console.log(`get history ${req.body.user_id}`)
     let isRecent = req.body.isRecent || req.body.is_recent;
     let user_id = req.body.user_id;
     let resHistoryData = [];
